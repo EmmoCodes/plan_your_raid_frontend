@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function LoginPage() {
   const login = async e => {}
 
@@ -18,9 +20,9 @@ function LoginPage() {
           value="Let's raid"
         />
       </form>
-      <a className="text-highlight hover:underline mt-5 text-sm" href="/register">
+      <Link className="text-highlight hover:underline mt-5 text-sm" to="/register">
         Need an account? Register here!
-      </a>
+      </Link>
     </main>
   )
 }
